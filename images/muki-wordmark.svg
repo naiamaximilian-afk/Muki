@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="650" height="228" viewBox="155 0 650 228">
+  <title>MUKI® Atelier</title>
+  <defs><linearGradient id="muki-silver" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="930" y2="0"><stop offset="46.66%" stop-color="#f4f5f6"/><stop offset="46.66%" stop-color="#101010"/></linearGradient></defs>
+  <g fill="url(#muki-silver)">
+    <path fill="url(#muki-silver)" d="M160 216l25-178 73 106 70-106 25 178h-40l-12-88-43 72-48-72-11 88z"/>
+    <path fill="url(#muki-silver)" d="M368 50h38v105c0 24 10 37 28 37s28-13 28-37V50h38v107c0 44-24 68-66 68s-66-24-66-68z"/>
+    <path fill="url(#muki-silver)" d="M526 50h39v67l58-67h46l-71 80 75 86h-49l-59-71v71h-39zM681 50h39v166h-39z"/>
+    <circle cx="780" cy="27" r="20.5" fill="none" stroke="#101010" stroke-width="3.8"/>
+    <path fill="url(#muki-silver)" fill-rule="evenodd" d="M772 15h8.3c5.5 0 8.8 2.7 8.8 7.2 0 3.3-1.7 5.6-4.9 6.7l6.1 9.1h-5l-5.6-8.5h-3.4V38H772zm4.3 3.7v7.3h3.8c2.9 0 4.5-1.4 4.5-3.8s-1.5-3.5-4.5-3.5z"/>
+  </g>
+</svg>
+
