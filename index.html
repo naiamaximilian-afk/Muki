@@ -1,1 +1,119 @@
-<!doctype html><html lang="sv"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>MUKI Atelier | LOOK 01</title><link rel="stylesheet" href="style.css"><script defer src="app.js"></script></head><body><header><a class="brand" href="#home"><svg viewBox="0 0 64 32" width="48" aria-hidden="true"><path d="M5 5l12 12L24 3l8 14L40 3l7 14L59 5l-8 22H13Z M14 30h36" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><span>MUKI</span><small>ATELIER</small></a><nav><a href="#collection">Kollektion</a><a href="#details">Detaljer</a><a href="#create">Atelier</a></nav></header><main id="home"><section class="hero"><div><p class="eyebrow">OLD MONEY COLLECTION</p><h1>LOOK 01</h1><p>The Signature Shirt &amp; Tailored Trousers</p><a class="cta" href="#collection">Upptäck kollektionen</a></div><img src="images/look-01-model.webp" alt="LOOK 01: marinblå skjorta och champagnebeige byxor"></section><section id="collection"><p class="eyebrow">01 / COLLECTION</p><h2>Två plagg. En silhuett.</h2><div class="grid"><article><img src="images/shirt.webp" alt="Marinblå skjorta, fram och bak"><h3>The Signature Shirt</h3><p>Midnight Navy</p><a href="#create" data-piece="shirt">Anpassa skjortan</a></article><article><img src="images/trousers.webp" alt="Champagnebeige byxor, fram och bak"><h3>The Tailored Trousers</h3><p>Champagne Beige</p><a href="#create" data-piece="trousers">Anpassa byxorna</a></article></div></section><section id="details"><p class="eyebrow">02 / CRAFT</p><h2>Detaljer i det tysta.</h2><div class="details"><figure><img src="images/signature.webp" alt="Ton-i-ton broderi"><figcaption>Diskret signatur</figcaption></figure><figure><img src="images/button.webp" alt="MUKI-knapp"><figcaption>Signaturknappar</figcaption></figure><figure><img src="images/collar.webp" alt="Invändig krage"><figcaption>Invändiga detaljer</figcaption></figure><figure><img src="images/fabric.webp" alt="Marinblå och beige tygprover"><figcaption>Materialreferenser</figcaption></figure></div><p class="muted">Designkoncept. Material och konstruktion bekräftas inför produktion.</p></section><section id="create"><p class="eyebrow">03 / YOUR ATELIER</p><h2>The Art of Your Fit</h2><form id="fit"><label>Plagg<select id="piece"><option value="shirt">The Signature Shirt</option><option value="trousers">The Tailored Trousers</option></select></label><div id="measurements"></div><button class="cta" type="submit">Granska mina mått</button><output id="summary" aria-live="polite"></output><p class="muted">Förhandsvisning. Ingen beställning eller betalning skickas.</p></form></section></main><footer>MUKI ATELIER · LOOK 01</footer></body></html>
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MUKI Atelier</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="frame" id="home">
+    <header class="masthead">
+      <details class="menu">
+        <summary aria-label="Meny">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18M3 12h18M3 19h18"/></svg>
+        </summary>
+        <nav aria-label="Meny">
+          <a href="#collection">ATHLEA THEORY</a>
+          <a href="#one-day">ONE DAY THEORY</a>
+          <a href="#create">Create Your Piece</a>
+        </nav>
+      </details>
+      <a class="brand" href="#home" aria-label="MUKI Atelier, startsida">
+        <img src="images/muki-wordmark.svg" alt="" width="650" height="228">
+        <span class="atelier">ATELIER</span>
+        <span class="one-day" lang="en">ONE DAY</span>
+      </a>
+      <a class="fit-link" href="#create">Anpassa</a>
+    </header>
+    <main>
+      <section class="hero" aria-labelledby="athlea">
+        <div class="hero-copy">
+          <h1 id="athlea">ATHLEA<br>THEORY</h1>
+          <p>Marinblå skjorta. Champagnebeige, plisserad byxa.</p>
+          <a class="action" href="#collection">Upptäck kollektionen</a>
+        </div>
+        <img src="images/studio.jpg" width="508" height="485" alt="Marinblå skjorta, champagnebeige plisserade byxor och bruna läderskor i en ljus studio">
+      </section>
+      <section class="section" id="collection" aria-labelledby="pieces">
+        <h2 id="pieces">ATHLEA THEORY</h2>
+        <div class="products">
+          <article>
+            <img src="images/shirt.jpg" width="161" height="99" alt="Detalj av den marinblå skjortan" loading="lazy">
+            <h3>The Signature Shirt</h3>
+            <a href="#create" data-piece="shirt">Anpassa skjortan</a>
+          </article>
+          <article>
+            <img src="images/trousers.jpg" width="128" height="225" alt="Detalj av de champagnebeige byxornas plissering" loading="lazy">
+            <h3>The Tailored Trousers</h3>
+            <a href="#create" data-piece="trousers">Anpassa byxorna</a>
+          </article>
+        </div>
+        <h3>Färgkombinationer</h3>
+        <div class="colorways">
+          <figure>
+            <img src="images/ivory-charcoal.jpg" alt="Elfenbensvit skjorta och grafitgrå byxor" loading="lazy">
+            <figcaption><a href="#create" data-look="ivory/charcoal">Elfenben och grafitgrått</a></figcaption>
+          </figure>
+          <figure>
+            <img src="images/navy-stone.jpg" alt="Marinblå skjorta och stengrå byxor" loading="lazy">
+            <figcaption><a href="#create" data-look="navy/stone">Marinblått och stengrått</a></figcaption>
+          </figure>
+        </div>
+        <div class="editorial" aria-label="ATHLEA THEORY i fyra miljöer">
+          <img src="images/stone.jpg" alt="Originalkombinationen vid en ljus stenarkad" width="508" height="485" loading="lazy">
+          <img src="images/hotel.jpg" alt="Originalkombinationen i en hotellobby med dagsljus" width="508" height="485" loading="lazy">
+          <img src="images/office.jpg" alt="Originalkombinationen vid modern kontorsarkitektur" width="508" height="528" loading="lazy">
+          <img src="images/cafe.jpg" alt="Originalkombinationen vid en kaféterrass" width="508" height="528" loading="lazy">
+        </div>
+      </section>
+      <section class="hero limited" id="one-day" aria-labelledby="limited-title">
+        <div class="hero-copy">
+          <h2 id="limited-title">ONE DAY<br>THEORY</h2>
+          <p>Samma silhuetter i svart och grafit, med ton-i-ton-väv och mörka metallknappar.</p>
+          <a class="action" href="#create" data-look="black/charcoal">Prova färgkombinationen</a>
+        </div>
+        <img src="images/one-day.jpg" width="508" height="528" alt="Svart skjorta med ton-i-ton-mönster och grafitgrå plisserade byxor" loading="lazy">
+      </section>
+      <section class="section configurator" id="create" aria-labelledby="fit-title">
+        <h2 id="fit-title" lang="en">Create Your Piece</h2>
+        <p>Prova färgerna tillsammans och granska måtten för ditt plagg.</p>
+        <form id="fit">
+          <fieldset>
+            <legend>Färgkombination</legend>
+            <div class="choices">
+              <label>Skjortans färg
+                <select id="shirt-color">
+                  <option value="navy">Mörk marinblå</option>
+                  <option value="black">Svart</option>
+                  <option value="ivory">Elfenben</option>
+                </select>
+              </label>
+              <label>Byxornas färg
+                <select id="trouser-color">
+                  <option value="champagne">Champagnebeige</option>
+                  <option value="charcoal">Grafitgrå</option>
+                  <option value="stone">Stengrå</option>
+                </select>
+              </label>
+            </div>
+            <div class="swatches" aria-hidden="true"><span id="shirt-swatch"></span><span id="trouser-swatch"></span></div>
+          </fieldset>
+          <label>Plagg
+            <select id="piece">
+              <option value="shirt">The Signature Shirt</option>
+              <option value="trousers">The Tailored Trousers</option>
+            </select>
+          </label>
+          <div class="choices" id="measurements"></div>
+          <button class="action" type="submit">Granska mina mått</button>
+          <output id="summary" aria-live="polite"></output>
+          <p class="fine-print">Färgproverna är digitala. Beställning och betalning är ännu inte tillgängliga.</p>
+        </form>
+      </section>
+    </main>
+    <footer>MUKI ATELIER</footer>
+  </div>
+</body>
+</html>
